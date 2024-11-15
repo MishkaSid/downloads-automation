@@ -1,7 +1,9 @@
 import os
 import shutil
 
-source_dir = r"C:\Users\michael\Downloads"  # Ensure this is a raw string with 'r'
+# Set source directory
+user_name = os.getlogin()
+source_dir = f"C:\\Users\\{user_name}\\Downloads"
 
 # Create dictionary of folders
 folders = {
